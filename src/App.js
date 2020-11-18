@@ -1,6 +1,9 @@
+import { useState } from "react";
 import './App.css';
 
 function App() {
+  const [todos, setTodos] = useState([])
+  const [input, setInput] = useState('')
 
   const addTodo = () => {
     console.log("button clicked");
